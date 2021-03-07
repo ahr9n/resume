@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ahmad Abdulrahman Radwan} \\ \vspace{1pt}
+    \small +20 114 923 1141 $|$ \href{mailto:ah.abdulrahmaan@gmail.com}{\underline{ah.abdulrahmaan@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/ahmad-abdulrahmaan}{\underline{linkedin.com/in/ahmad-abdulrahmaan}} $|$
+    \href{https://github.com/AHR9N}{\underline{github.com/AHR9N}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Faculty of Engineering, Al-Azhar University}{Cairo, Egypt}
+      {Bachelor of Systems and Computer Engineering}{Sep. 2017 -- Expected: Jul. 2022}
+  \resumeSubHeadingListEnd
+
+%-----------PROBLEM SOLVING COMPETITIONS & ACHIEVEMENTS-----------
+\section{Problem Solving Competitions}
+    \resumeItemListStart
+        \resumeItem{\textbf{Ranked 12th} on Egypt in Google HashCode 2021.}
+        \resumeItem{\textbf{Finalist} in Africa \& Arab Collegiate Programming Contest (ACPC) 2020.}
+        \resumeItem{\textbf{Ranked 45th} in Egyptian Collegiate Programming Contest (ECPC) 2020.}
+        \resumeItem{\textbf{Ranked 4th} on Egypt in IEEEXtreme 14.0 Programming Competition.}
+        \resumeItem{\textbf{Solved +1300 various problems} on several online judges, (Codeforces, UVa, SPOJ, LeetCode, ..etc).}
+        \resumeItem{\textbf{Expert} on Codeforces, handle: \href{https://codeforces.com/profile/RetiredRadwan}{\underline{RetiredRadwan}}.}
+      \resumeItemListEnd
+
+%-----------EXPERIENCE & VOLUNTEERING-----------
+\section{Experience \& Volunteering}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mentor \& Problem-setter}{Feb. 2020 -- Present}
+      {AIC - Al-Azhar ICPC Community}{Cairo, Egypt}
+      \resumeItemListStart
+        \resumeItem{Teaching topics, popular algorithms and techniques of competitive programming.}
+        \resumeItem{Helping write problem-sets for weekly sheets and contests.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Social Media Specialist}{Feb. 2020 -- Present}
+      {AIC - Al-Azhar ICPC Community}{Cairo, Egypt}
+      \resumeItemListStart
+        \resumeItem{Using social media platforms to connect with trainees to build and organize the training step by step, involving publishing all content about competitive programming.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Radio/Phonetics Committee Member}{Nov. 2020 -- Present}
+      {MOIC ASU - Model Organization Of Islamic Co-operation}{Cairo, Egypt}
+      \resumeItemListStart
+        \resumeItem{Helping provide Arabic voice-overs involved in media posts about educating students of current trends in theory and practice of international relations, effective communication and
+multilateral diplomacy.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Radio/Phonetics Committee Member}{Apr. 2019 -- Jun. 2019}
+      {MOIC ASU - Model Organization Of Islamic Co-operation}{Cairo, Egypt}
+      \resumeItemListStart
+        \resumeItem{Helped provide Arabic calligraphy and typography designs involved in posts about
+educating students of current trends in relations, communication.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Notify Me!} $|$ \emph{JavaScript, HTML}}{Jan. 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web browser extension which notifies contestants when there are announcements on \href{https://vjudge.net/}{\underline{VJudge OJ}} running contests, instead of wasting time reloading pages and looking for them periodically.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{In The Queue, Please!} $|$ \emph{Java, JavaFX GUI, CSS}}{Dec. 2022}
+          \resumeItemListStart
+            \resumeItem{Implemented the Deterministic and Stochastic Models in Queuing Theory, including showing graph result (if exists for a model).}
+          \resumeItemListEnd
+       \resumeProjectHeading
+          {\textbf{Differentiation Lab} $|$ \emph{Java}}{May. 2019}
+          \resumeItemListStart
+            \resumeItem{Implemented a calculator that allows you to solve first order and higher order derivatives of any function using Apache exp4j library, based on GUI.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Kotlin, Python, JavaScript, HTML/CSS} \\
+     \textbf{Tools \& Technologies}{: Unix/Linux, Git, CLion, IntelliJ, PyCharm, Android} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
