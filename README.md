@@ -1,2 +1,1 @@
-# resume
-My resume in LaTeX.
+<h1 align="center">My resume using LaTeX</h1>
