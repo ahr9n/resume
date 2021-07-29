@@ -6,6 +6,6 @@ A single-page, one-column resume for Software Engineers. It uses the base latex 
 
 ### Preview:
 
-![RESUME PREVIEW](https://user-images.githubusercontent.com/52632898/127578695-70a6b1ac-9576-4aff-857d-92e5aa4b6bb7.png)
+![RESUME PREVIEW](https://user-images.githubusercontent.com/52632898/127578945-3237fea1-8abb-4c6f-89ce-a3b3c737a564.png)
 
 ---
