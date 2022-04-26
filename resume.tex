@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ahmad}{Radwan}{ \urlstyle{same}\href{http://ahr9n.github.io}{ahr9n.github.io} | \href{https://www.linkedin.com/in/ahmad-abdulrahmaan}{linkedin.com/ahmad-abdulrahmaan}\\
+\href{mailto:ah.abdulrahmaan@gmail.com}{ah.abdulrahmaan@gmail.com} | +20 114 923 1141 | \href{http://github.com/ahr9n}{github.com/ahr9n}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Al-Azhar University}
+\descript{Faculty of Engineering}
+\location{Sep. 2018 - Aug. 2022 | Cairo, Egypt}
+BEng, Major in Systems and Computer Engineering \\
+% \location{ Cum. GPA: 3.83 / 4.0 \\
+% Major GPA: 3.9 / 4.0}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+% Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages:}
+C/C++ \textbullet{} Java \textbullet{} Python \textbullet{} Kotlin \\
+SQL \textbullet{} Bash \textbullet{} PostgreSQL \textbullet{} \LaTeX\ \\
+\hspace{}
+\subsection{Tools \& Technologies:}
+Django \textbullet{} React \textbullet{} JavaScript \textbullet{} HTML/CSS \\
+Git \textbullet{} Linux \textbullet{} Android \textbullet{} Design Patterns \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Volunteering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Volunteering}
+\subsection{Al-Azhar ICPC Community}
+\descript{Mentor \& Problem-setter}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Teaching topics, popular algorithms and techniques of competitive programming (CP).\\
+    \item Helping write problem-sets for weekly sheets and contests.
+    \item Trained 100+ students in Level 1 \& 2 Training.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Extra-curricular activity
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extra-curricular}
+\subsection{Al-Azhar ICPC Community}
+\descript{Social Media Committee Head}
+\begin{tightemize}
+    \item Using social media platforms to connect with trainees.\\
+    \item Building and organizing the training step by step, publishing all content about CP \& problem solving.
+\end{tightemize}
+\sectionsep
+
+    %   {Social Media Committee Head}{Feb. 2020 -- Present}
+    %   {AIC - Al-Azhar ICPC Community}{Cairo, Egypt}
+    %   \resumeItemListStart
+    %     \resumeItem{Using social media platforms to connect with trainees.}
+    %     \resumeItem{Building and organizing the training step by step, publishing all content about CP \& problem solving.}
+    %   \resumeItemListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{bld.ai}
+\descript{| Software Engineer }
+\location{Mar. 2022 - Present | Florida, United States (Remote)}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Designing, maintaining and developing new features, using \textbf{Django}, \textbf{PostgreSQL} and \textbf{React}.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Coursera}
+% \descript{| KPCB Fellow + Software Engineering Intern }
+% \location{June 2014 – Sep 2014 | Mountain View, CA}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+% \item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+% \item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Google}
+% \descript{| Software Engineering Intern }
+% \location{May 2013 – Aug 2013 | Mountain View, CA}
+% \begin{tightemize}
+% \item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.
+% \item Created a backbone.js-like framework for the Captions editor.
+% \end{tightemize}
+% \sectionsep
+
+% \runsubsection{Phabricator}
+% \descript{| Open Source Contributor \& Team Leader}
+% \location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+% \begin{tightemize}
+% \item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.
+% \item I created the Meme generator and more in PHP and Shell.
+% \item Led a team from MIT, Cornell, IC London and UHelsinki for the project.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{CS50 Web Projects}\descript{| Django, React, HTML/CSS}
+\location{Mar. 2022 –- Present}
+
+\begin{tightemize}
+    \item Finished 5 projects, involved with web design and development; \href{https://github.com/ahr9n/cs50w-search}{\textbf{Search}}, \href{https://github.com/ahr9n/cs50w-wiki}{\textbf{Wiki}}, \href{https://github.com/ahr9n/cs50w-commerce}{\textbf{Commerce}}, \href{https://github.com/ahr9n/cs50w-mail}{\textbf{Mail}}, and \href{https://github.com/ahr9n/cs50w-network}{\textbf{Network}}.
+    \item Used Markdown, SaSS, BootStrap, and JsAction Library.
+\end{tightemize}
+\sectionsep
+
+\href{https://github.com/ahr9n/quran-api}{\runsubsection{RESTful Quran API}}\descript{| Python, Django, HTML/CSS}
+\begin{tightemize}
+    \item Allows users to lexical search of verses, and listen for Tilawah.\\
+\end{tightemize}
+\sectionsep
+
+\href{https://github.com/ahr9n/psolving-paradigms}{\runsubsection{PSolving Paradigms}}\descript{| C++}
+\begin{tightemize}
+    \item Implemented common problems with solutions in dynamic programming, with prerequisites for competitive programmers from online judges.
+    \item Prepared a sheet in details; difficulty, topics, hints and notes, in case to solve, for learning/training purpose.
+\end{tightemize}
+\sectionsep
+
+% \href{https://github.com/ahr9n/ahr9n.github.io}{\runsubsection{Personal Website}}\descript{| Jekyll, Handlebars (Gulp), SaSS, HTML, JavaScript, and GitHub Pages}
+% % \location{Mar. 2022 –- Present}
+% \sectionsep
+
+\href{https://github.com/ahr9n/electrical-network-analyzer}{\runsubsection{Electrical Network Analyzer}}\descript{| Python (NumPy)}
+\begin{tightemize}
+    \item Implemented BASED ON computer-aided design. \\
+\end{tightemize}
+\sectionsep
+
+\href{https://github.com/ahr9n/unbeatable-tic-tac-toe}{\runsubsection{Unbeatable Tic-Tac-Toe}}\descript{| JavaScript, HTML/CSS}
+\begin{tightemize}
+    \item Developed using mini-max algorithm and alpha-beta pruning.\\ 
+\end{tightemize}
+\sectionsep
+
+\href{https://github.com/ahr9n/in-the-queue-please}{\runsubsection{In The Queue, Please!}}\descript{| Java, JavaFX, CSS}
+\begin{tightemize}
+    \item Implemented the Deterministic and Stochastic Models in Queuing Theory, including charts results (if exists for a model).\\
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Notify Me!}
+% \descript{| JavaScript, and HTML/CSS}
+% \begin{tightemize}
+%     \item Developed a web browser extension which notifies contestants when there are announcements on \textbf{\href{VJudge.net}{VJudge.net}} running contests, instead of wasting time reloading pages and looking for them periodically.\\
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2022 & International & \href{https://www.linkedin.com/feed/update/urn:li:activity:6876965006358016000/}{\textbf{Regional bronze medalist}} and \href{https://icpc.global/ICPCID/D88WKIAMLAUS}{\textbf{ICPC World Finalist}}\\
+2021 & 11\textsuperscript{th}/145 & Africa \& Arab Collegiate Programming Contest\\
+2021 & 15\textsuperscript{th}/180 & Egyptian Collegiate Programming Contest\\
+2021 & 1\textsuperscript{st}/37 & Al-Azhar Collegiate Programming Contest\\
+2021 & 12\textsuperscript{th} National & Google HashCode \\
+2021 & Expert & Max rating on CodeForces: 1831,  \href{https://codeforces.com/profile/AhmadEbtihal}{\textbf{AhmadEbtihal}}
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
